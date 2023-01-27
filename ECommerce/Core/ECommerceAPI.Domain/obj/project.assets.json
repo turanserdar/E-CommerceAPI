@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj",
+      "projectUniqueName": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj",
       "projectName": "ECommerceAPI.Domain",
-      "projectPath": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj",
+      "projectPath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj",
       "packagesPath": "C:\\Users\\turan\\.nuget\\packages\\",
-      "outputPath": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Domain\\obj\\",
+      "outputPath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\turan\\AppData\\Roaming\\NuGet\\NuGet.Config",

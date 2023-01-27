@@ -10,3 +10,15 @@ D:\Projeler\E-Commerce\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\EComm
 D:\Projeler\E-Commerce\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\refint\ECommerceAPI.Domain.dll
 D:\Projeler\E-Commerce\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.pdb
 D:\Projeler\E-Commerce\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ref\ECommerceAPI.Domain.dll
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\bin\Debug\net6.0\ECommerceAPI.Domain.deps.json
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\bin\Debug\net6.0\ECommerceAPI.Domain.dll
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\bin\Debug\net6.0\ECommerceAPI.Domain.pdb
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.csproj.AssemblyReference.cache
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.AssemblyInfoInputs.cache
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.AssemblyInfo.cs
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.csproj.CoreCompileInputs.cache
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.dll
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\refint\ECommerceAPI.Domain.dll
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ECommerceAPI.Domain.pdb
+D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Domain\obj\Debug\net6.0\ref\ECommerceAPI.Domain.dll

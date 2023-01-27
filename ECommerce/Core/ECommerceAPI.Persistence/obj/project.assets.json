@@ -92,11 +92,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
+      "projectUniqueName": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
       "projectName": "ECommerceAPI.Persistence",
-      "projectPath": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
+      "projectPath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
       "packagesPath": "C:\\Users\\turan\\.nuget\\packages\\",
-      "outputPath": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Persistence\\obj\\",
+      "outputPath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\turan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,8 +113,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj": {
-              "projectPath": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj"
+            "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj": {
+              "projectPath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj"
             }
           }
         }

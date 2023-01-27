@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ECommerceAPI.Application
-build_property.ProjectDir = D:\Projeler\E-Commerce\ECommerce\Core\ECommerceAPI.Application\
+build_property.ProjectDir = D:\Projeler\E-CommerceAPI\ECommerce\Core\ECommerceAPI.Application\

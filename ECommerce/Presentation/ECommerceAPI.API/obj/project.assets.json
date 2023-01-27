@@ -308,11 +308,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projeler\\E-Commerce\\ECommerce\\Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj",
+      "projectUniqueName": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj",
       "projectName": "ECommerceAPI.API",
-      "projectPath": "D:\\Projeler\\E-Commerce\\ECommerce\\Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj",
+      "projectPath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj",
       "packagesPath": "C:\\Users\\turan\\.nuget\\packages\\",
-      "outputPath": "D:\\Projeler\\E-Commerce\\ECommerce\\Presentation\\ECommerceAPI.API\\obj\\",
+      "outputPath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Presentation\\ECommerceAPI.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\turan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -329,11 +329,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj": {
-              "projectPath": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj"
+            "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj": {
+              "projectPath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj"
             },
-            "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj": {
-              "projectPath": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj"
+            "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj": {
+              "projectPath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj"
             }
           }
         }

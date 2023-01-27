@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "85ipfHN+eSVmPXgbfUB2cXPemV2y6m+FmSe7yda7yXTPy8/Op4SgbMjbzQ8yzieQ0gpUejNAqT2I+N4Y9WLriw==",
+  "dgSpecHash": "zDmN4WNxb3MoTIAFEMGNcyKBN0brzVrf3VHuLj4fJtnt5SUUrhgGWdsAoP/IDiBcaBneb1V16IgLyZ2k58M3JQ==",
   "success": true,
-  "projectFilePath": "D:\\Projeler\\E-Commerce\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj",
+  "projectFilePath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
