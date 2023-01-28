@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TPJQxN81K88zva0om4UbyQgI0d0HediCe/qbUJPd0kIbFBvVMnlH9fomyGhcX/Ve6BMHLx4KxxX2cx32HWvP3A==",
+  "success": true,
+  "projectFilePath": "D:\\Projeler\\E-CommerceAPI\\ECommerce\\Core\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\turan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
