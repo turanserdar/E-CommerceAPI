@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ECommerceAPI.Application.Repositories;
+using ECommerceAPI.Persistence.Repositories;
 
 namespace ECommerceAPI.Persistence
 {
@@ -21,8 +23,19 @@ namespace ECommerceAPI.Persistence
             services.AddDbContext<ECommerceAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
 
 
+            //Buraya repository Servicelerimizi ekliyoruz. AddDbContext Scope turunden oldugu icin bizde Scope ile calisacagiz.
 
-    }
+            //Asagida Scoped koduna ornek vermek gerekirse ICustomerReadRepository istendigi zaman geriye CustomerReadRepository dondurecegiz
+            services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
+            services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
+            services.AddScoped<IOrderReadRepository, OrderReadRepository>();
+            services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
+            services.AddScoped<IProductReadRepository, ProductReadRepository>();
+            services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
+
+       
+
+        }
 
     }
 
