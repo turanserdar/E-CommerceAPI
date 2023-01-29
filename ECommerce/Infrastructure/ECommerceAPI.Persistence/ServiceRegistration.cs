@@ -27,6 +27,7 @@ namespace ECommerceAPI.Persistence
 
             //Asagida Scoped koduna ornek vermek gerekirse ICustomerReadRepository istendigi zaman geriye CustomerReadRepository dondurecegiz
             services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
+
             services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
             services.AddScoped<IOrderReadRepository, OrderReadRepository>();
             services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();

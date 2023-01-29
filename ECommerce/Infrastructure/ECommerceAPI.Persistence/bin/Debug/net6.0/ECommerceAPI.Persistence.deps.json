@@ -349,7 +349,8 @@
       },
       "ECommerceAPI.Application/1.0.0": {
         "dependencies": {
-          "ECommerceAPI.Domain": "1.0.0"
+          "ECommerceAPI.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.2"
         },
         "runtime": {
           "ECommerceAPI.Application.dll": {}
