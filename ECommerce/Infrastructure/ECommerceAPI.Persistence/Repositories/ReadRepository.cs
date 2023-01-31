@@ -24,23 +24,76 @@ namespace ECommerceAPI.Persistence.Repositories
 
         public DbSet<T> Table => _context.Set<T>();
 
-       
-
-        public IQueryable<T> GetAll() //Get All ile veri tabaninda T turune uygun ne kadar veri varsa getir diyoruz
-        => Table;
 
 
-        public IQueryable<T> GetWhere(Expression<Func<T, bool>> method)
-        => Table.Where(method);
+        public IQueryable<T> GetAll(bool tracking = true) //Get All ile veri tabaninda T turune uygun ne kadar veri varsa getir diyoruz
 
-        public async Task<T> GetSingleAsync(Expression<Func<T, bool>> method)
+        {
+            //AsQueryable, .NET Framework içindeki System.Linq namespace içindeki bir metoddur. Bu metod, verilen nesnenin IQueryable türüne dönüştürülmesini sağlar. Bu, LINQ (Language Integrated Query) sorguları tarafından desteklenen bir veri kaynağına dönüştürme yapmasını sağlar.AsQueryable metodu, verilen bir nesnenin IQueryable türüne dönüştürülmesini sağlar. LINQ sorguları, IQueryable türlerine uygulanabilir ve bu sorgular verileri çalışma zamanında değil, sorgu zamanında uygulanır. Bu, verilerin sorgulandıktan sonra verilmesini ve bellekte daha az yer kaplamasını sağlar. Yani asagida AsQuaryable yazmakla artik linq sorgularini query uzerinde uygulayabiliriz.
 
-            =>await Table.FirstOrDefaultAsync(method);
+            var query = Table.AsQueryable();
 
-        public async Task<T> GetByIdAsync(string id)
+            //tracking true ise zaten data track edilerek gelsin. Fakat sorgu false ise o zaman tracki kopariyoruz. Ilgili gelen datanin track edilmesini istemiyoruz
+            //Eger track track istemiyorsak:
 
-            => await Table.FirstOrDefaultAsync(data => data.id == Guid.Parse(id));
-        //Stringi guide cevirdik
+            if (!tracking)
+
+                query = query.AsNoTracking(); //Burada devre disi biraktik
+
+
+            return query;
+        }
+
+
+        public IQueryable<T> GetWhere(Expression<Func<T, bool>> method, bool tracking = true)
+        //=> Table.Where(method);
+        {
+            var query = Table.Where(method);
+
+            if (!tracking)
+            { query = query.AsNoTracking();
+            }
+
+
+            return query;
+
+        }
+
+        public async Task<T> GetSingleAsync(Expression<Func<T, bool>> method, bool tracking = true)
+
+         /*   =>await Table.FirstOrDefaultAsync(method)*/
+
+        {
+
+        var query = Table.AsQueryable();
+        if (!tracking)
+	{
+                query = query.AsNoTracking();
+	}
+
+            return await query.FirstOrDefaultAsync(method);
+
+        }
+
+        public async Task<T> GetByIdAsync(string id, bool tracking = true)
+
+        //=> await Table.FirstOrDefaultAsync(data => data.id == Guid.Parse(id));//Marker pattern, stringi guid e cevirdik
+        //=> await Table.FindAsync(Guid.Parse(id));   //Ef find method  //IQuerayble da calisirken FindAsync fonksiyonu yoktur o yuzden Marker kullanmamiz lazim asagida return de kullandigimiz gibi
+
+        {
+
+            var query = Table.AsQueryable();
+
+            if (!tracking)
+    
+
+                query=query.AsNoTracking();
+
+
+            return await query.FirstOrDefaultAsync(data => data.id == Guid.Parse(id));
+
+
+        }
 
         
 

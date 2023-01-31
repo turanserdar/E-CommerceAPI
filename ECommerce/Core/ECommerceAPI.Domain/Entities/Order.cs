@@ -10,7 +10,7 @@ namespace ECommerceAPI.Domain.Entities
     public class Order:BaseEntity
     {
         //We deliberately set this CustomerId. Because we have defined a customer relationship below. Therefore, if we do not specify the Customer Id ourselves, Entity Framework will set it automatically. We wanted to determine here.
-        public int CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
         public string Description { get; set; }
 
         public string Address { get; set; }

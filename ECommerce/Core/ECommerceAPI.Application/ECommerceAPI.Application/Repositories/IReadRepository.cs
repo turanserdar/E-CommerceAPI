@@ -20,16 +20,16 @@ namespace ECommerceAPI.Application.Repositories
         //IQueryable ve INumarable var. Sorgu uzerinde calismak istiyorsak IQueryable.I Numarable ise memory(bellek) üzerinde muhafıza edilen veriler üzerinden gerekli sorgulama işlemleri yapar.
         ////There are IQueryable and INumarable. If we want to work on the query, IQueryable.INumarable makes the necessary query operations over the data stored on memory.
         //Burada List tarzi seyler kullanmayin. List INumerable dir memorye ceker verileri onun uzerinde islem  yapmamizi saglar.IQueryable de yazilan sorgular ilgili veritabani sorgularina eklenecektir
-        IQueryable<T> GetAll(); 
+        IQueryable<T> GetAll(bool tracking = true); 
 
 
         //Burada paranetez icinde yazdigim ifade verdigim sarta uygun ifadeleri getir demek
-        IQueryable<T> GetWhere(Expression<Func<T,bool>>method);
+        IQueryable<T> GetWhere(Expression<Func<T,bool>>method, bool tracking = true);
 
         //Vermis oldugum sarta uygun ilk tekil nesneyi getirecek bir sorgu olusturacaksak cogul ifade olan IQuerayable i vs kullanmiyorum
-        Task<T> GetSingleAsync(Expression<Func<T,bool>>method); //Burada da sarta uygun olan ilkini getirecek
+        Task<T> GetSingleAsync(Expression<Func<T,bool>> method,bool tracking = true); //Burada da sarta uygun olan ilkini getirecek
 
-        Task<T> GetByIdAsync(string id);
+        Task<T> GetByIdAsync(string id,bool tracking = true);
 
     }
 }

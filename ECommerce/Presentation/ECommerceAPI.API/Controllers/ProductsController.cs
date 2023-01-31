@@ -1,4 +1,5 @@
 ﻿using ECommerceAPI.Application.Repositories;
+using ECommerceAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,30 +14,35 @@ namespace ECommerceAPI.API.Controllers
 
         readonly private IProductReadRepository _productReadRepository;
 
-        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
+        readonly private IOrderReadRepository _orderReadRepository;
+
+        readonly private IOrderWriteRepository _orderWriteRepository;
+
+        readonly private ICustomerWriteRepository _customerWriteRepository;
+
+        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IOrderWriteRepository orderWriteRepository, ICustomerWriteRepository customerWriteRepository, IOrderReadRepository orderReadRepository)
         {
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
+            _orderWriteRepository = orderWriteRepository;
+            _customerWriteRepository = customerWriteRepository;
+            _orderReadRepository = orderReadRepository;
         }
 
         [HttpGet]
-        public async void Get ()
+        public async Task Get()
 
         {
-           await _productWriteRepository.AddRangeAsync(new()
 
+            Order order= await _orderReadRepository.GetByIdAsync("fa99365f-5417-459f-bc9e-dfda68fdb188");
+            order.Address = "Istanbul";
 
-            {
-                new(){id=Guid.NewGuid(), Name="Product1", Price=100, CreatedDate=DateTime.UtcNow,Stock=10},
-                  new(){id=Guid.NewGuid(), Name="Product2", Price=200, CreatedDate=DateTime.UtcNow,Stock=20},
-                    new(){id=Guid.NewGuid(), Name="Product3", Price=300, CreatedDate=DateTime.UtcNow,Stock=30},
-            });
-
-            await _productWriteRepository.SaveAsync();
-
+            await _orderWriteRepository.SaveAsync();
 
         }
 
+
+       
 
     }
 }
